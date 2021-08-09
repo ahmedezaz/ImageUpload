@@ -24,6 +24,7 @@ $file_explode = explode('.',$file_name);
 $file_ext = end($file_explode);
 $file_type = array('jpeg','jpg','png');
 
+    // 1kb = 1024 bytes and 1mb = 1024 kb so 1mb = 1048576
 if($size > 2097152) {
     echo "File should be less than 2 MB.";
 }elseif(in_array($file_ext,$file_type) == false) {
